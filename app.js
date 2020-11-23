@@ -28,8 +28,11 @@ function calculateResults(e) {
     totalPayment.value = (monthly * calculatedPayments).toFixed(2);
     totalInterest.value = (monthly * calculatedPayments - principal).toFixed(2);
   } else {
-    console.log('Check Your Numbers');
+    showError('Please check your numbers');
   }
 
   e.preventDefault();
 }
+
+// Show error
+function showError() {}
