@@ -50,4 +50,7 @@ function showError(error) {
 
   // Insert error above heading
   card.insertBefore(errorDiv, heading);
+
+  // Clear error after 3 seconds
+  setTimeout(clearError, 3000);
 }
