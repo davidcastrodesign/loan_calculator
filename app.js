@@ -7,17 +7,29 @@ document
 function calculateResults(e) {
   console.log('calculating');
   // UI Variables
-  const amount = document.getElementByID('amount');
-  const interest = document.getElementByID('interest');
-  const years = document.getElementByID('years');
-  const monthlyPayment = document.getElementByID('monthly-payment');
-  const totalPayment = document.getElementByID('total-payment');
-  const totalInterest = document.getElementByID('total-interest');
+  const amount = document.getElementById('amount');
+  const interest = document.getElementById('interest');
+  const years = document.getElementById('years');
+  const monthlyPayment = document.getElementById('monthly-payment');
+  const totalPayment = document.getElementById('total-payment');
+  const totalInterest = document.getElementById('total-interest');
 
-  // calculation vars
+  // // calculation vars
   const principal = parseFloat(amount.value);
   const calculatedInterest = parseFloat(interest.value) / 100 / 12;
   const calculatedPayments = parseFloat(years.value) * 12;
+
+  // // Compute monthly payments
+  const x = Math.pow(1 + calculatedInterest, calculatedPayments);
+  const monthly = (principal * x * calculatedInterest) / (x - 1);
+
+  if (isFinite(monthly)) {
+    monthlyPayment.value = monthly.toFixed(2);
+    totalPayment.value = (monthly * calculatedPayments).toFixed(2);
+    totalInterest.value = (monthly * calculatedPayments - principal).toFixed(2);
+  } else {
+    console.log('Check Your Numbers');
+  }
 
   e.preventDefault();
 }
