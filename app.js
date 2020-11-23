@@ -35,6 +35,12 @@ function calculateResults() {
     monthlyPayment.value = monthly.toFixed(2);
     totalPayment.value = (monthly * calculatedPayments).toFixed(2);
     totalInterest.value = (monthly * calculatedPayments - principal).toFixed(2);
+
+    // Show Results
+    document.getElementById('results').style.display = 'block';
+
+    // Hide Loader
+    document.getElementById('loading').style.display = 'none';
   } else {
     showError('Please check your numbers');
   }
