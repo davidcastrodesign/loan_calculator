@@ -17,11 +17,11 @@ To preview the app please follow the link below:
 
 ## Home page
 
-![Home Page](img/loan_calculator1.png?raw=true 'Home Page')
+![Home Page](img/loan_calculator_1.png?raw=true 'Home Page')
 
 ## Values Entered
 
-![Values Entered](img/loan_calculator2.png?raw=true 'Values Entered')
+![Values Entered](img/loan_calculator_2.png?raw=true 'Values Entered')
 
 ## Results
 
