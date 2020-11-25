@@ -1,5 +1,7 @@
 # loan_calculator
 
+# About
+
 Loan Calculator
 
 This Project uses html, bootstrap & Javascript.
