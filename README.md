@@ -9,8 +9,6 @@ It's an exercise in building small apps, specifically to calculate loans like an
 It asks for the loan amount, iterest rate and years to pay.
 Then calculates and gives the user the montly payment, total payment & interest.
 
-To preview the app please follow the link below:
-
 ## Click [here](https://davidcastrodesign.github.io/loan_calculator/) for the live app.
 
 # App Interaction Screenshots
