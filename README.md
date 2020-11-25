@@ -11,4 +11,18 @@ Then calculates and gives the user the montly payment, total payment & interest.
 
 To preview the app please follow the link below:
 
-https://davidcastrodesign.github.io/loan_calculator/
+## Click [here](https://davidcastrodesign.github.io/loan_calculator/) for the live app.
+
+# App Interaction Screenshots
+
+## Home page
+
+![Home Page](img/loan_calculator1.png?raw=true 'Home Page')
+
+## Values Entered
+
+![Values Entered](img/loan_calculator2.png?raw=true 'Values Entered')
+
+## Results
+
+![Results](img/loan_calculator3.png?raw=true 'Results')
